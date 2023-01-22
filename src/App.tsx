@@ -13,7 +13,7 @@ function App() {
       <Header />
       <div className="inline-flex mt-20 w-full">
         <SideBar />
-        <div className="container w-full  px-2 justify-center text-center flex lg:left-52 relative lg:w-4/5">
+        <div className="container w-full px-2 justify-center text-center flex lg:left-52 relative lg:w-4/5">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/add-contact" element={<AddUser />} />
