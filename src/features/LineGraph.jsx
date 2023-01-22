@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Cards } from "../Charts/components/Cards/Cards";
+// import { Cards } from "../Charts/components/Cards/Cards";
 import { CountryPicker, Chart } from "../Charts/components";
 
 import { fetchData } from "../Charts/api";
@@ -29,7 +29,7 @@ class LineGraph extends React.Component {
     return (
       <div className="container">
         <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Cards data={data} />
+        {/* <Cards data={data} /> */}
         <Chart data={data} country={country} />
       </div>
     );
