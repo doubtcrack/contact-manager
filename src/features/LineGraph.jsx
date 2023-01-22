@@ -28,9 +28,10 @@ class LineGraph extends React.Component {
     // console.log(country);
     return (
       <div className="container">
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
+        {/* <CountryPicker handleCountryChange={this.handleCountryChange} /> */}
         {/* <Cards data={data} /> */}
-        <Chart data={data} country={country} />
+        {/* <Chart data={data} country={country} /> */}
+        APIS will be here
       </div>
     );
   }
