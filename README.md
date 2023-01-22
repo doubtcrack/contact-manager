@@ -2,6 +2,27 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Screens
+
+![My Image](/src/Documentation/images/Picture1.png)
+![My Image](/src/Documentation/images/Picture2.png)
+![My Image](/src/Documentation/images/Picture3.png)
+![My Image](/src/Documentation/images/Picture4.png)
+![My Image](/src/Documentation/images/Picture5.png)
+![My Image](/src/Documentation/images/Picture6.png)
+![My Image](/src/Documentation/images/Picture7.png)
+![My Image](/src/Documentation/images/Picture8.png)
+
+## Pre-Requisite
+
+**Nodejs**
+
+     Make sure to have the Node.js installed & running in your computer. If you already have installed Node on your computer, you can skip this step if you have pre-installed Nodejs.
+
+**Git**
+
+     Make sure to have the Git installed globally & running on your computer. If you already have installed git on your computer, you can skip this step.
+
 ## Available Scripts
 
 In the project directory, you can run:

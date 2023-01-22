@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import SideBar from "./components/SideBar1";
+import AddUser from "./features/users/AddUser";
+import EditUser from "./features/users/EditUser";
+import UserList from "./features/users/UserList";
+import Home from "./features/users/Home";
+import LineGraph from "./features/LineGraph";
+import Documentation from "./Documentation";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className="inline-flex mt-20 w-full">
+        <SideBar />
+        <div className="container w-full  px-2 justify-center text-center flex lg:left-52 relative lg:w-4/5">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/add-contact" element={<AddUser />} />
+            <Route path="/edit-contact/:id" element={<EditUser />} />
+            <Route path="/ContactsList" element={<UserList />} />
+            <Route path="/Graphs" element={<LineGraph />} />
+            <Route path="/Documentation" element={<Documentation />} />
+          </Routes>
+        </div>
+      </div>
+    </>
   );
 }
 
